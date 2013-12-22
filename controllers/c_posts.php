@@ -91,6 +91,8 @@ class posts_controller extends base_controller {
 		
 		# Prevent special characters
 		$_POST['content'] = htmlentities($_POST['content']);
+		$_POST['author'] = htmlentities($_POST['author']);
+		$_POST['title'] = htmlentities($_POST['title']);
 		
 		$file_name = $_POST['title'].'_'.Time::now();
 		
