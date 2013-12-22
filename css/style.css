@@ -1,0 +1,244 @@
+/*box sizing*/
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;}
+
+/*reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444444;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*typography styling*/
+
+a {
+	color: rgb(112,57,91);
+	text-decoration: none;
+}
+i {
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 0.85em;
+	color: rgb(80,80,80);
+}
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.8em;
+	color: #8c8c8c;
+}
+h2 {
+	font-weight: 300;
+	font-size: 1.25em;
+	color: rgb(112,57,91);
+}
+p {
+	color: rgb(80,80,80);
+	padding: 10px 0;
+}
+ol {
+	list-style-position: inside;
+}
+
+/*layout*/
+
+body {
+	background: #fff;
+}
+#wrapper {
+	position: relative;
+	width: 900px;
+	margin: 30px auto;
+}
+#header {
+	overflow: hidden;
+}
+#logo {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.618em;
+	color: #000000;
+	float: left;
+}
+#sign-in {
+	float: right;
+	margin-top: 15px;
+}
+#sign-in a {
+	padding: 0 15px;
+	text-decoration: none;
+	color: rgb(70,133,137);
+}
+#sign-in a:hover {
+	color: rgb(112,57,91);
+}
+hr {
+	border: 0;
+	border-bottom: 1px solid #cccccc;
+}
+#welcome {
+	padding: 20px 0;
+	width: 49%;
+	float: left;
+}
+#control_panel {
+	border: 1px dashed #cccccc;
+	/*border-bottom: 1px dashed #cccccc;*/
+	width: 49%;
+	float: left;
+	padding: 20px;
+}
+#post_count, #user_count, #most_recent_post {
+	font-weight: 300;
+	font-size: 1.25em;
+	color: rgb(112,57,91);
+}
+#menu a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 1.25em;
+	color: rgb(112,57,91);
+	text-decoration: none;
+	padding: 0 20px;
+}
+.content {
+	width: 100%;
+	overflow: hidden;
+	padding: 50px 20px;
+}
+#signup-block, #login-block {
+	padding: 30px 0;
+	width: 45%;
+	float: left;
+}
+#or {
+	width: 9%;
+	float: left;
+	padding: 0 10px;
+	padding-top: 35px;
+}
+img.avatar {
+	width: 150px;
+	max-width: 150px;
+	border-radius: 50%;
+}
+.post img {
+	border-radius: 0;
+	max-width: 800px;
+	width: auto;
+}
+.member {
+	overflow: hidden;
+	padding: 10px;
+}
+.member h2, .member img {
+	float: left;
+}
+.member h2 {
+	padding: 7px 50px;
+}
+.member i {
+	float: left;
+	padding-top: 14px;
+}
+.member img {
+	width: 150px;
+	max-width: 150px;
+	border-radius: 50%;
+}
+.bio {
+	float: right;
+	width: 35%;
+}
+.content textarea {
+	width: 60%;
+	min-height: 100px;
+}
+article.post {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.left, .right {
+	float: left;
+}
+.left {
+	width: 66%;
+	padding-right: 20px;
+}
+.right {
+	width: 33%;
+}
+.post {
+	padding: 20px 0;
+	border-bottom: 1px dashed #cccccc;
+}
+.post p {
+	font-family: Georgia, serif;
+	padding-left: 30px;
+}
+.post h2 {
+	width: 66%;
+}
+.unfollow {
+	color: #666666;
+}
+.edit-profile a {
+	padding: 0 15px;
+	text-decoration: none;
+	color: rgb(70,133,137);
+}
+.edit-profile a:first-child {
+	padding-left: 0;
+}
+.edit-profile a:hover {
+	color: rgb(112,57,91);
+}
+.error {
+	color: red;
+}
+#validEmail {
+	font-style: italic;
+	font-family: Georgia, serif;
+}
