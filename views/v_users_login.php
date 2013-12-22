@@ -4,8 +4,8 @@
 	<h2>Log-in:</h2>
 	
     Email<br>
-    <input type='text' id="validate" name='email'>
-    <span class="validEmail"></span>
+    <input type='text' id="validate_login" name='email'>
+    <span id="validEmail_login"></span>
 
     <br><br>
 

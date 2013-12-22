@@ -13,7 +13,7 @@
 
     Email<br>
     <input type='text' id="validate" name='email'>
-    <span class="validEmail"></span>
+    <span id="validEmail"></span>
     <br><br>
 
     Password<br>
