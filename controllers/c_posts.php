@@ -18,7 +18,7 @@ class posts_controller extends base_controller {
 		
 		# Build the query
 		$q = 'SELECT
-				posts .* ,
+				posts .*,
 				posts.user_id AS post_user_id,
 				users_users.user_id AS follower_id,
 				users.first_name,
