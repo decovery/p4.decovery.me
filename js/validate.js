@@ -6,12 +6,12 @@ $("#validate").keyup(function(){
         {
             if(isValidEmailAddress(email))
             {
-                $("#validEmail").html('Ok.');
+                $(".validEmail").html('Ok.');
             } else {
-                $("#validEmail").html('Please enter valid email.');
+                $(".validEmail").html('Please enter valid email.');
             }
         } else {
-            $("#validEmail").html(' ');         
+            $(".validEmail").html(' ');         
         }
 
  });
