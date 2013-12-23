@@ -1,5 +1,7 @@
 <!--If not logged in user display sign up and login forms-->
 <?php if(!$user): ?>
+	<p>BookTalk is a microblog where people can post reviews of the books they have recently read.</p>
+	<br/>
 
 	<h1>Welcome to <?=APP_NAME?>!</h1>
 

@@ -33,21 +33,6 @@ class posts_controller extends base_controller {
 		# Run query
 		$posts = DB::instance(DB_NAME)->select_rows($q);
 		
-		# Build the query
-		$b = 'SELECT 
-			    posts .* , 
-			    users.first_name, 
-			    users.last_name
-			FROM posts
-			INNER JOIN users 
-		    	ON posts.user_id = users.user_id
-		    WHERE users.user_id = '.$this->user->user_id;
-		
-		# Run the query
-		$my_posts = DB::instance(DB_NAME)->select_rows($b);
-		
-		# Pass data to the view
-		$this->template->content->my_posts = $my_posts;
 		# Pass data to the view
 		$this->template->content->posts = $posts;
 		
